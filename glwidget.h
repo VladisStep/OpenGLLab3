@@ -5,17 +5,19 @@
 #include <iostream>
 #include <GLUT/glut.h>
 
+#include "bspline.h"
+
 using namespace std;
 
 class GLWidget : public QOpenGLWidget
 {
     Q_OBJECT
 
-    double dots[10] = {0.1, 0.1,
-                      0.2, 0.2,
-                      0.3, 0.3,
+    double dots[10] = {0.0, 0.0,
+                      0.1, 0.3,
+                      0.3, 0.5,
                       0.4, 0.4,
-                      0.5, 0.5};
+                      0.6, 0.1};
 public:
 
 
