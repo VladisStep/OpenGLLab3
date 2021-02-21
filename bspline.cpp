@@ -17,7 +17,6 @@ double BSpline::C_1(double u, double dots[], int isY){ // C(u) for (0 <= u < 2)
     answer += (pow(u, 3)/18)*dots[6+isY];
 
     return answer;
-
 }
 
 double BSpline::C_2(double u, double dots[], int isY){ // C(u) for (2 <= u < 3)
@@ -29,5 +28,4 @@ double BSpline::C_2(double u, double dots[], int isY){ // C(u) for (2 <= u < 3)
     answer += pow((u - 2), 3)*dots[8+isY];
 
     return answer;
-
 }
