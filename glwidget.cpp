@@ -25,13 +25,13 @@ void GLWidget::drawDots(){
    glColor3f(1, 0, 0);
    glBegin(GL_LINE_STRIP);
 
-   for (double i = 0.0; i < 2.7; i += 0.1){
+   for (double i = 0.0; i < 2.0; i += 0.01){
 
        glVertex2d( s->C_1(i, dots, 0), s->C_1(i, dots, 1));
 
    }
 
-   for (double i = 2.7; i < 6.0; i += 0.1){
+   for (double i = 2.0; i < 3.0; i += 0.01){
 
        glVertex2d( s->C_2(i, dots, 0), s->C_2(i, dots, 1));
 
