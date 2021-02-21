@@ -11,9 +11,17 @@ class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
+    int selectedDot = 0;
+
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private slots:
+
+    void on_horizontalSlider_sliderMoved(int position);
+
+    void on_horizontalSlider_2_sliderMoved(int position);
 
 private:
     Ui::MainWindow *ui;
